@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0D1B2A;
+  --color-secondary: #162236;
+  --color-accent: #B87333;
+  --color-accent-light: #D4925A;
+  --color-surface: #F5F0E8;
+  --color-text-primary: #F5F5F5;
+  --color-text-muted: #8A9BB0;
+  --color-text-dark: #1A1A2E;
+  --color-border: #1E3048;
+
+  --font-heading: "Italiana", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
