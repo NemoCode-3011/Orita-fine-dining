@@ -1,47 +1,67 @@
-import { motion } from "motion/react"
-import { Link } from "react-router-dom"
-import { UtensilsCrossed, Globe, Sparkles, Wine } from "lucide-react"
+import { motion } from "motion/react";
+import { Link } from "react-router-dom";
+import { UtensilsCrossed, Globe, Sparkles, Wine } from "lucide-react";
 
 const categories = [
   {
     id: 1,
     icon: UtensilsCrossed,
     name: "Nigerian",
-    description: "Authentic soups, grills, rice dishes and small chops rooted in Nigerian culinary tradition.",
+    description:
+      "Authentic soups, grills, rice dishes and small chops rooted in Nigerian culinary tradition.",
     dishes: ["Egusi Soup", "Party Jollof", "Suya", "Nkwobi", "Peppered Snail"],
-    href: "/menu#nigerian"
+    href: "/menu#nigerian",
   },
   {
     id: 2,
     icon: Globe,
     name: "Continental",
-    description: "Classic European favourites from starters to mains, prepared with precision and care.",
-    dishes: ["Fish & Chips", "Ribeye Steak", "Grilled Salmon", "Pasta", "Lamb Chops"],
-    href: "/menu#continental"
+    description:
+      "Classic European favourites from starters to mains, prepared with precision and care.",
+    dishes: [
+      "Fish & Chips",
+      "Ribeye Steak",
+      "Grilled Salmon",
+      "Pasta",
+      "Lamb Chops",
+    ],
+    href: "/menu#continental",
   },
   {
     id: 3,
     icon: Sparkles,
     name: "Fusion",
-    description: "Where our two worlds collide — chef's crossroads creations you won't find anywhere else.",
-    dishes: ["Jollof Risotto", "Suya Rack of Lamb", "Egusi Velouté", "Asun Tacos"],
-    href: "/menu#fusion"
+    description:
+      "Where our two worlds collide — chef's crossroads creations you won't find anywhere else.",
+    dishes: [
+      "Jollof Risotto",
+      "Suya Rack of Lamb",
+      "Egusi Velouté",
+      "Asun Tacos",
+    ],
+    href: "/menu#fusion",
   },
   {
     id: 4,
     icon: Wine,
     name: "Drinks & Desserts",
-    description: "From zobo sorbet to crème brûlée, Chapman to cocktails — the perfect finish to your experience.",
-    dishes: ["Zobo Sorbet", "Crème Brûlée", "Chapman", "Palm Wine", "Cocktails"],
-    href: "/menu#drinks"
+    description:
+      "From zobo sorbet to crème brûlée, Chapman to cocktails — the perfect finish to your experience.",
+    dishes: [
+      "Zobo Sorbet",
+      "Crème Brûlée",
+      "Chapman",
+      "Palm Wine",
+      "Cocktails",
+    ],
+    href: "/menu#drinks",
   },
-]
+];
 
 const MenuPreview = () => {
   return (
     <section className="bg-surface py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +70,9 @@ const MenuPreview = () => {
           viewport={{ once: true }}
           className="flex flex-col items-center text-center gap-4 mb-16"
         >
-          <p className="text-accent text-xs uppercase tracking-widest">What We Serve</p>
+          <p className="text-accent text-xs uppercase tracking-widest">
+            What We Serve
+          </p>
           <div className="flex items-center gap-3">
             <div className="w-8 h-px bg-accent" />
             <div className="w-2 h-2 border border-accent rotate-45" />
@@ -60,7 +82,8 @@ const MenuPreview = () => {
             Explore Our Menu
           </h2>
           <p className="text-text-dark/60 max-w-lg leading-relaxed">
-            Two culinary worlds, one extraordinary menu. Something for every palate, every occasion.
+            Two culinary worlds, one extraordinary menu. Something for every
+            palate, every occasion.
           </p>
         </motion.div>
 
@@ -94,7 +117,10 @@ const MenuPreview = () => {
                 {/* Sample dishes */}
                 <ul className="flex flex-col gap-1">
                   {category.dishes.map((dish) => (
-                    <li key={dish} className="text-text-muted text-xs flex items-center gap-2">
+                    <li
+                      key={dish}
+                      className="text-text-muted text-xs flex items-center gap-2"
+                    >
                       <span className="w-1 h-1 bg-accent rounded-full inline-block" />
                       {dish}
                     </li>
@@ -125,10 +151,9 @@ const MenuPreview = () => {
             View Full Menu
           </Link>
         </motion.div>
-
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default MenuPreview
+export default MenuPreview;

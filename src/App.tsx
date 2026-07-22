@@ -4,11 +4,13 @@ import Menu from "./pages/Menu";
 import About from "./pages/About";
 import Reservations from "./pages/Reservations";
 import LoadingScreen from "./components/LoadingScreen";
+import Scrolltotop from "./components/scrolltotop";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Scrolltotop />
       <LoadingScreen />
       <Navbar />
       <Routes>
