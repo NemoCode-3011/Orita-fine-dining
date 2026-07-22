@@ -53,6 +53,7 @@ const Gallery = () => {
   return (
     <section className="bg-primary py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
+        
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
