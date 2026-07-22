@@ -53,7 +53,7 @@ const Gallery = () => {
   return (
     <section className="bg-primary py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-8">
-        
+
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,7 +74,7 @@ const Gallery = () => {
             A Glimpse of Oríta
           </h2>
           <p className="text-text-muted max-w-lg leading-relaxed">
-            Every corner of Oríta is designed to transport you — from the warmth
+            Every corner of Oríta is designed to transport you, from the warmth
             of the lighting to the artistry on your plate.
           </p>
         </motion.div>
