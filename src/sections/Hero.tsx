@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import heroImage from "../assets/hero4.jpg";
+import heroImage from "../assets/about1.jpg";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
